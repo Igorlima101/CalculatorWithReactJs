@@ -1,0 +1,100 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff,#da00ff);
+  clip-path: circle(15% at 24% 20%);
+  
+}
+body::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#e91e63,#ffc107);
+  clip-path: circle(20% at 70% 90%);
+}
+
+.calculadora{
+  width: 248px;
+  height: 200px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 52px);
+  grid-template-rows: repeat(5, 52px);
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  
+
+}
+.input {
+  max-width: 248px;
+  width: 270px;
+  background-color: white;
+  height: 30px;
+  font-size: 25px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  
+}
+  
+.button {
+  font-family: Arial;
+  width: 50px;
+  height: 50px;
+  font-size: 25;
+  cursor: pointer;
+  background-color: rgb(31,31,31);
+  color: white;
+  border: none; 
+  
+  margin-right: 50%;
+}
+.clear-btn{
+  font-family: Arial;
+  width: 102px;
+  height: 50px;
+  font-size: 25;
+  cursor: pointer;
+  background-color: rgb(26, 155, 15);
+  color: white;
+  border: none; 
+  
+}
+.apagar {
+  font-family: Arial;
+  width: 50px;
+  height: 50px;
+  font-size: 25;
+  cursor: pointer;
+  background-color: rgb(26, 155, 15);
+  color: white;
+  border: none; 
+  
+}
+.botaosoma {
+  font-family: Arial;
+  width: 50px;
+  height: 103px;
+  font-size: 25;
+  cursor: pointer;
+  background-color: rgb(26, 155, 15);
+  color: white;
+  border: none; 
+  
+}
